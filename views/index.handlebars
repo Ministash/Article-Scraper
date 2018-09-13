@@ -1,0 +1,45 @@
+<nav>
+    <div class="nav-wrapper navBar">
+        <div class="brand-logo center x">The Gaurdian Scraper</div>
+    </div>
+</nav>
+
+
+
+<div class="row">
+    <div class="col s4">
+        {{#each arr}}
+        <a class='articleLink hoverable' href='/article/{{title}}'>
+            <h5 class='nytTitle'>{{title}}</h5>
+            <img class='nytImage' src="{{img}}">
+            <p class='nytText'>{{snippet}}</p>
+            <p class='nytAuthor'>{{author}}</p>
+        </a>
+        {{/each}}
+
+
+    </div>
+
+    <div class="col s4">
+        {{#each arrTwo}}
+        <a class='articleLink hoverable' href='/article/{{title}}'>
+            <h5 class='nytTitle'>{{title}}</h5>
+            <img class='nytImage' src="{{img}}">
+            <p class='nytText'>{{snippet}}</p>
+            <p class='nytAuthor'>{{author}}</p>
+        </a>
+        {{/each}}
+    </div>
+
+    <div class="col s4">
+        {{#each arrThree}}
+        <a class='articleLink hoverable' href='/article/{{title}}'>
+            <h5 class='nytTitle'>{{title}}</h5>
+            <img class='nytImage' src="{{img}}">
+            <p class='nytText'>{{snippet}}</p>
+            <p class='nytAuthor'>{{author}}</p>
+        </a>
+        {{/each}}
+    </div>
+
+</div>
